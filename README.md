@@ -10,4 +10,4 @@
 * [tp3 - Sistemas distribuidos](tp3/README.md)
 * [tp4 - Microservicios](tp4/README.md)
 * [tp5 - Herramientas de construcción de software](tp5/README.md)
-* [tp6 - Construcción de Imágenes de Docker](tp5/README.md)
+* [tp6 - Construcción de Imágenes de Docker](tp6/README.md)
