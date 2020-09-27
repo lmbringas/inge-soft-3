@@ -36,6 +36,7 @@ El siguiente comando ``` mvn archetype:generate -DgroupId=ar.edu.ucc -DartifactI
 ```mvn clean package``` compilamos el proyecto y generamos un build .jar en la carpeta target.
 
 Se ejecuto con exito!!! 😀😀😀
+
 ![OUTPUT](assets/hello_world.png)
 
 
