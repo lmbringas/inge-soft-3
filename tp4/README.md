@@ -5,6 +5,25 @@ El punto de entrada al sistema es el contenedor de edge-route que es un traefik 
 
 ### Por qué cree usted que se está utilizando repositorios separados para el código y/o la configuración del sistema? Explique puntos a favor y en contra.
 
+Este es un sistema pensando como microservicios donde cada uno tiene sos responsabilidad.
+
+```Puntos a favor de usar Multi-Repo```
+
+* El codigo, sus configuraciones, y su contenedores se mantienen un mismo lugar lo que facilita el deploy y no genera conflicto con configuraciones de algun otro servicio.
+* Un cambio al codigo fuente solo haria un build de ese servicio y no de la aplicacion entera.
+* Se genera independencia entre los servicios y una mejor forma de estructurar la comunicacion entre los mismos. Osea mejora la forma de pensar cada microservicio.
+* Mejora de CI se puede ajustar mejor a cada repositorio.
+* Los grupos de trabajos son independientes.
+
+
+```Puntos en contra de usar Multi-Repo```
+
+* Duplicacion de codigo, para resolver un problema en comun diferentes grupos generan la misma solucion.
+* En un escenario de monorepo se tiene una vision general del proyecto de manera mas directa.
+* En un escenario de monorepo se simplifican las dependencias ya que la dependencias de un microservice puede ser la misma que otro.
+* Se puede complicar para la gente nueva poder entender el sistema.
+* Es mas dificil seguir las mejores practicas si cada uno hace lo que quiere.
+
 ### ¿Cuál contenedor hace las veces de API Gateway?
 El contenedor de ```front-end```
 
